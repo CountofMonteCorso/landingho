@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <!--icons -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Kaushan Script -->
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	<!--css -->
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+	 <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  	<script type="text/javascript" src="../main.js"></script>
+
+</head>
+<body>
+	<div class="row">	
+		<h1>Landing Ho!</h1>		
+	</div>
+	<div class="container">
+		<div class="row" id="content">
+			<div class="col xs2" id="intro-par">
+				<p id="intro">
+				Ahoy, stranger!  Looking for some cool landing pages?  I'm Kev the Dev and I've cooked up a few landing page templates for you, but if none of those float your boat, we can easily whip up some clean custom ones as well.  Fill out the contact form to the right and let's get this ship sailing.
+				</p>
+			</div>	
+			<div class="col xs10" id="formD">
+				<form action="/contact" method="post" id="formID">
+		          <div class="row">
+		            <div class="col xs12">
+		              <input name="firstname" placeholder="First Name" id="first_name" type="text" class="validate" required>
+		                <label for="first_name">First Name</label>
+		            </div>
+		            <div class="col xs12">
+		              <input name="lastname" placeholder="Last Name" id="last_name" type="text" class="validate" required>
+		                  <label for="last_name">Last Name</label>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div class="col xs12">
+		              <input name="email" placeholder="Email" id="email" type="email" class="validate" required>
+		                <label for="email">Email</label>
+		            </div class="col xs12">
+		            <div class="col xs12">
+		              <input name="subject" placeholder="Subject" id="subject" type="text" class="validate" required>
+		                <label for="subject">Subject</label>
+		            </div>
+		          </div>
+		          <div class="row">
+		            <div>
+		              <textarea name="message" placeholder="What's up?" id="textarea1" class="materialize-textarea"></textarea>
+		                <label for="textarea1">Message</label>
+		            </div>
+		          </div>
+		            </br>
+		          <div class= "row">
+		            <div class="btn-group" role="group">
+		              <button class="btn waves-effect waves-light #880e4f pink darken-4" type="submit" name="action" id="submit-button">Send</button>                
+		            </div>
+		          </div>
+		        </form>
+			</div>
+		</div>
+		<div class="row">
+			<h2>Sample Pages </h2>
+		</div>
+		<div class="row">
+			<div class="col xs4">
+				Link to Template 1
+			</div>
+			<div class="col xs4">
+				Link to Template 2
+			</div>
+			<div class="col xs4">
+				Link to Template 3
+			</div>
+		</div>
+		<div class="row">
+			<h2>Looking for more? </h2>
+		</div>
+		<div class="row">
+			<p> Sometimes you need more than just a landing page.  If you're looking for a complete website from a full stack developer, I'm your guy.  Click the button below to visit my personal website and together, we can bring your business to life online. </p>
+			<button class="btn waves-effect waves-light #880e4f pink darken-4"><a href="https://kevincorso.herokuapp.com/"> Kev the Dev </a> </button>
+		</div>
+	</div>
+	
+
+  <script type="text/javascript">
+      $("#formID").on("submit", function(event){
+        Materialize.toast('Thank you!', 4000, 'rounded');
+
+          setTimeout(function() {
+            location.reload();
+          }, 3000);
+          
+      });
+
+  </script>  
+</body>
+<footer>
+	© Kevin Corso 2018
+</footer>
+</html>
